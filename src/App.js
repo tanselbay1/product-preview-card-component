@@ -1,13 +1,12 @@
 import photo from "./images/image-product-mobile.jpg";
 import Content from "./components/Content";
-import CartButton from "./components/CartButton";
+import "./styles/Styles.css";
 
 function App() {
   return (
-    <div className="container">
-      <img src={photo} alt="gabrielle-fragrance" srcset="" />
+    <div className="preview-card-container">
+      <img src={photo} alt="gabrielle-fragrance" />
       <Content />
-      <CartButton />
     </div>
   );
 }
