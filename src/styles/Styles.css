@@ -20,28 +20,57 @@
 }
 .content-wrapper .prices {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  justify-content: left;
   margin-bottom: 1rem;
 }
 .content-wrapper .discounted-price {
   color: hsl(158deg, 36%, 37%);
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-family: "Fraunces", serif;
   margin-right: 1rem;
 }
 .content-wrapper .price {
   text-decoration: line-through;
+  font-size: 0.75rem;
 }
 .content-wrapper .discounted-price,
 .content-wrapper .price {
   display: inline;
 }
 
+@media screen and (min-width: 1440px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .content-wrapper h1.content-header {
+    line-height: 1;
+    margin-bottom: 1.3rem;
+  }
+  .content-wrapper .preview-title {
+    font-size: 0.75rem;
+    margin-bottom: 1.35rem;
+    letter-spacing: 4.8px;
+  }
+  .content-wrapper .description {
+    font-size: 0.87rem;
+    margin-bottom: 1.5rem;
+  }
+  .prices .discounted-price {
+    font-size: 2rem;
+    margin-right: 1.1rem;
+  }
+}
 .cart-button {
   background-color: hsl(158deg, 36%, 37%);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   color: hsl(0deg, 0%, 100%);
   padding: 0.9rem;
   border-radius: 10px;
@@ -59,6 +88,13 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1440px) {
+  .cart-button {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -69,6 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: hsl(30deg, 38%, 92%);
@@ -79,9 +116,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: hsl(228deg, 12%, 48%);
   background-color: hsl(0deg, 0%, 100%);
-  flex-direction: column;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   width: 19rem;
@@ -91,4 +128,17 @@ body {
 }
 .preview-card-container img {
   max-width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .preview-card-container {
+    flex-direction: row;
+    align-items: stretch;
+    width: 37rem;
+    height: 28rem;
+    font-size: 16px;
+  }
+  .preview-card-container img.product-image {
+    content: url("../images/image-product-desktop.jpg");
+    max-width: 50%;
+  }
 }/*# sourceMappingURL=Styles.css.map */

@@ -15,7 +15,7 @@
 }
 
 body {
-  @include flexCenter();
+  @include flexCenter(column);
   margin: 0;
   padding: 0;
   background-color: $cream;
@@ -23,10 +23,10 @@ body {
 }
 
 .preview-card-container {
-  @include flexCenter();
+  @include flexCenter(column);
   color: $dark-grayish-blue;
   background-color: $white;
-  flex-direction: column;
+  // flex-direction: column;
   font-size: 14px;
   font-family: $montserrat;
   width: 19rem;
@@ -36,5 +36,18 @@ body {
 
   img {
     max-width: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: stretch;
+    width: 37rem;
+    height: 28rem;
+    font-size: 16px;
+
+    img.product-image {
+      content: url("../images/image-product-desktop.jpg");
+      max-width: 50%;
+    }
   }
 }

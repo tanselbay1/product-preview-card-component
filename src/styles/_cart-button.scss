@@ -3,7 +3,7 @@
 
 .cart-button {
   background-color: $dark-cyan;
-  @include flexCenter;
+  @include flexCenter(row);
   color: $white;
   padding: 0.9rem;
   border-radius: 10px;
@@ -20,5 +20,13 @@
   &:hover {
     background-color: $dark-cyan-active;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cart-button {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
   }
 }

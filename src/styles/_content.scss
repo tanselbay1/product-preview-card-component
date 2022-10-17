@@ -24,24 +24,55 @@
   }
 
   .prices {
-    display: flex;
-    align-items: center;
+    @include flexCenter(row);
+    justify-content: left;
     margin-bottom: 1rem;
   }
 
   .discounted-price {
     color: $dark-cyan;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-family: $fraunces;
     margin-right: 1rem;
   }
 
   .price {
     text-decoration: line-through;
+    font-size: 0.75rem;
   }
 
   .discounted-price,
   .price {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    h1.content-header {
+      line-height: 1;
+      margin-bottom: 1.3rem;
+    }
+
+    .preview-title {
+      font-size: 0.75rem;
+      margin-bottom: 1.35rem;
+      letter-spacing: 4.8px;
+    }
+
+    .description {
+      font-size: 0.87rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .prices {
+    .discounted-price {
+      font-size: 2rem;
+      margin-right: 1.1rem;
+    }
   }
 }
