@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tanselbay1/product-preview-card-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/tanselbay1/product-preview-card-component)
+- Live Site URL: [Netlify](https://deft-daifuku-a40f8c.netlify.app/)
 
 ## My process
 
